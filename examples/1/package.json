@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Somin Yuri",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-live-alert-bp": "^1.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "live-alert-bp-formatter-sass": "^1.0.0"
+  },
+  "dependencies": {}
+}

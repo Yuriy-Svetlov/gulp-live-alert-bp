@@ -19,6 +19,7 @@ You need to install the browser plugin [Live Alert Browser Page](https://live-al
   * Firefox (not yet available)
   
 **Step - 2**
+
 ```shell
 npm i gulp-live-alert-bp --save-dev
 ```
@@ -50,14 +51,14 @@ const
 
 function css() {
   return gulp.src(cssSrc)
-	.pipe(plumber({errorHandler: onError}))     
-	.pipe(sass().on('error', sass.logError))
-	.pipe(postcss([
-	    cssnano({zindex: false, reduceIdents: false})
-	]))    
-	.pipe(gulp.dest(cssDest))
-	.pipe(liveAlert.close()) // It is not mandatory (If the web page reloads completely)
-	.pipe(liveAlert.reloadNotification());  // It is not mandatory (If the web page reloads completely)
+  .pipe(plumber({errorHandler: onError}))     
+  .pipe(sass().on('error', sass.logError))
+  .pipe(postcss([
+      cssnano({zindex: false, reduceIdents: false})
+  ]))    
+  .pipe(gulp.dest(cssDest))
+  .pipe(liveAlert.close()) // It is not mandatory (If the web page reloads completely)
+  .pipe(liveAlert.reloadNotification());  // It is not mandatory (If the web page reloads completely)
 }
 
 
@@ -72,7 +73,7 @@ function onError(err){
 
       //  Using the formatter
       liveAlert.open(
-      	liveAlertFormatterSass(err)
+        liveAlertFormatterSass(err)
       );
     }
   }
@@ -92,3 +93,9 @@ exports.css = css;
 exports.watch = watch;
 
 ```
+
+### Examples:
+
+* [usage sass formatter](https://github.com/semiromid/live-alert-bp/tree/master/examples/1)
+* other [useful examples](https://github.com/semiromid/live-alert-bp/blob/master/documentation/examples/gulp/README.md) 
+for Gulp 
