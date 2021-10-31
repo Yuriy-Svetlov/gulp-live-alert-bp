@@ -12,7 +12,7 @@
     "live",
     "reload"
   ],
-  "author": "Yuri Somin",
+  "author": "Somin Yuri",
   "license": "MIT",
   "dependencies": {
     "live-alert-bp": "^1.0.0"
