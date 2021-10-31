@@ -10,13 +10,24 @@ Base manuals are in [live-alert-bp](https://github.com/semiromid/live-alert-bp)
 
 ## Getting Started
 
-###  Install
+### Installs
+
+**Step - 1** 
+
+You need to install the browser plugin [Live Alert Browser Page](https://live-alert-browser-page.com/) if you have not already installed it for:
+  * [Google Chrome](#)
+  * Firefox (not yet available)
+  
+**Step - 2**
 ```shell
 npm i gulp-live-alert-bp --save-dev
 ```
 
 ###  How to use
 
+Read basic information [live-alert-bp](https://github.com/semiromid/live-alert-bp)
+
+[Example of how to establish a connection to the plugin «**Live Alert Browser Page**»](https://github.com/semiromid/live-alert-bp/tree/master/documentation/examples/%D1%81onnect_to_server)
 
 ```javascript
 const 
