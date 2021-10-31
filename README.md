@@ -96,6 +96,6 @@ exports.watch = watch;
 
 ### Examples:
 
-* [usage sass formatter](https://github.com/semiromid/live-alert-bp/tree/master/examples/1)
+* [usage sass formatter](https://github.com/semiromid/gulp-live-alert-bp/tree/master/examples/1)
 * other [useful examples](https://github.com/semiromid/live-alert-bp/blob/master/documentation/examples/gulp/README.md) 
 for Gulp 
