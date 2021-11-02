@@ -29,28 +29,28 @@ class Server{
     let transformStream = new Transform({objectMode: true});
     let lastFile = null;
 
-		this.liveAlertBP.error = false;
+    this.liveAlertBP.error = false;
 
-		transformStream._transform = function(file, encoding, callback) {
-			let error = null;
-			let output = file;
+    transformStream._transform = function(file, encoding, callback) {
+      let error = null;
+      let output = file;
 
-			lastFile = file;
+      lastFile = file;
 
-			callback(error, output);
-		}
+      callback(error, output);
+    }
 
-		transformStream._flush = function(callback){
-			if(null != lastFile){
-				if(this.liveAlertBP.hasError() != true){
-					this.liveAlertBP.close();
-				}
-			}
+    transformStream._flush = function(callback){
+      if(null != lastFile){
+        if(this.liveAlertBP.hasError() != true){
+          this.liveAlertBP.close();
+        }
+      }
 
-			callback();
-		}.bind(this);
+      callback();
+    }.bind(this);
 
-		return transformStream;
+    return transformStream;
   }
 
 
