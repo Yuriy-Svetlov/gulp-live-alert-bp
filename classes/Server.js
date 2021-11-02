@@ -25,7 +25,7 @@ class Server{
   }
 
 
-  close(options = {}){
+	close(options = {}){
 		let transformStream = new Transform({objectMode: true});
 		let lastFile = null;
 
@@ -51,7 +51,7 @@ class Server{
 		}.bind(this);
 
 		return transformStream;
-  }
+	}
 
 
   open(message){
