@@ -16,20 +16,20 @@ const
 class Server{
 
   constructor(options){
-	  this.liveAlertBP = new liveAlertBP(options);
+    this.liveAlertBP = new liveAlertBP(options);
   }
 
 
   run(){
-	  this.liveAlertBP.run();
+    this.liveAlertBP.run();
   }
 
 
   close(options = {}){
-	  let transformStream = new Transform({objectMode: true});
-	  let lastFile = null;
-	
-	  this.liveAlertBP.error = false;
+		let transformStream = new Transform({objectMode: true});
+		let lastFile = null;
+
+		this.liveAlertBP.error = false;
 
 		transformStream._transform = function(file, encoding, callback) {
 			let error = null;
@@ -56,8 +56,8 @@ class Server{
 
   open(message){
 		if(message.length > 0){
-		  this.liveAlertBP.error = true;
-		  this.liveAlertBP.open(message);
+			this.liveAlertBP.error = true;
+			this.liveAlertBP.open(message);
 		}
   }
 
