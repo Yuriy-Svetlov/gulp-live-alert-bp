@@ -9,27 +9,27 @@
 'use strict';
 
 const
-	liveAlertBP = require('live-alert-bp'),
-	Transform = require('stream').Transform;
+  liveAlertBP = require('live-alert-bp'),
+  Transform = require('stream').Transform;
 
 
 class Server{
 
-	constructor(options){
-		this.liveAlertBP = new liveAlertBP(options);
-	}
+  constructor(options){
+	  this.liveAlertBP = new liveAlertBP(options);
+  }
 
 
-	run(){
-		this.liveAlertBP.run();
-	}
+  run(){
+	  this.liveAlertBP.run();
+  }
 
 
-	close(options = {}){
-		let transformStream = new Transform({objectMode: true});
-		let lastFile = null;
-		
-		this.liveAlertBP.error = false;
+  close(options = {}){
+	  let transformStream = new Transform({objectMode: true});
+	  let lastFile = null;
+	
+	  this.liveAlertBP.error = false;
 
 		transformStream._transform = function(file, encoding, callback) {
 			let error = null;
@@ -51,19 +51,21 @@ class Server{
 		}.bind(this);
 
 		return transformStream;
-	}
+  }
 
 
-	open(message){
-		this.liveAlertBP.error = true;
-		this.liveAlertBP.open(message);
-	}
+  open(message){
+		if(message.length > 0){
+		  this.liveAlertBP.error = true;
+		  this.liveAlertBP.open(message);
+		}
+  }
 
 
-	reloadNotification(){
+  reloadNotification(){
 		let transformStream = new Transform({objectMode: true});
 		let lastFile = null;
-		
+	
 		this.liveAlertBP.error = false;
 
 		transformStream._transform = function(file, encoding, callback) {
@@ -86,17 +88,17 @@ class Server{
 		}.bind(this);
 
 		return transformStream;		
-	}
+  }
 
 
-	resetError(){
+  resetError(){
 		this.liveAlertBP.resetError();
-	}
+  }
 
 
-	hasError(){
+  hasError(){
 		return this.liveAlertBP.hasError();
-	}
+  }
 
 }
 
