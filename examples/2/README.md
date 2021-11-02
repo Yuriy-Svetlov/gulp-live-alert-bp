@@ -1,6 +1,6 @@
 # Example with using the Sass and Stylelint formatters (gulp-live-alert-bp)
 
-**1.** Download or copy [exmaple-1](https://github.com/semiromid/gulp-live-alert-bp/tree/master/examples/2)
+**1.** Download or copy [exmaple-2](https://github.com/semiromid/gulp-live-alert-bp/tree/master/examples/2)
 
 **2.** Go to the directory with `gulpfile.js` and run the command in console: 
 
