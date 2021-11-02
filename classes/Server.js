@@ -25,9 +25,9 @@ class Server{
   }
 
 
-	close(options = {}){
-		let transformStream = new Transform({objectMode: true});
-		let lastFile = null;
+  close(options = {}){
+    let transformStream = new Transform({objectMode: true});
+    let lastFile = null;
 
 		this.liveAlertBP.error = false;
 
@@ -51,7 +51,7 @@ class Server{
 		}.bind(this);
 
 		return transformStream;
-	}
+  }
 
 
   open(message){
