@@ -1,12 +1,12 @@
 # gulp-live-alert-bp (Live Alert Browser Page)
 
-![Live Alert Browser Page](https://raw.githubusercontent.com/semiromid/live-alert-bp/master/images/on_128x128_v1.png)
+![Live Alert Browser Page](https://raw.githubusercontent.com/Yuriy-Svetlov/live-alert-bp/master/images/on_128x128_v1.png)
 
 This module is for the browser plugin «[Live Alert Browser Page](https://live-alert-browser-page.com/)» — this is the browser plugin for real-time alert on the browser page during web development.
 
 [live-alert-browser-page.com](https://live-alert-browser-page.com/)
 
-Base manuals are in [live-alert-bp](https://github.com/semiromid/live-alert-bp)
+Base manuals are in [live-alert-bp](https://github.com/Yuriy-Svetlov/live-alert-bp)
 
 ## Getting Started
 
@@ -26,9 +26,9 @@ npm i gulp-live-alert-bp --save-dev
 
 ###  How to use
 
-Read basic information [live-alert-bp](https://github.com/semiromid/live-alert-bp)
+Read basic information [live-alert-bp](https://github.com/Yuriy-Svetlov/live-alert-bp)
 
-[Example of how to establish a connection to the plugin «**Live Alert Browser Page**»](https://github.com/semiromid/live-alert-bp/tree/master/documentation/examples/%D1%81onnect_to_server)
+[Example of how to establish a connection to the plugin «**Live Alert Browser Page**»](https://github.com/Yuriy-Svetlov/live-alert-bp/tree/master/documentation/examples/%D1%81onnect_to_server)
 
 ```javascript
 const 
@@ -96,11 +96,11 @@ exports.watch = watch;
 
 ### Examples:
 
-* [usage Sass formatter](https://github.com/semiromid/gulp-live-alert-bp/tree/master/examples/1)
-* [usage Sass and Stylelint formatters](https://github.com/semiromid/gulp-live-alert-bp/tree/master/examples/2)
-* [useful examples](https://github.com/semiromid/live-alert-bp/blob/master/documentation/examples/gulp/README.md) 
+* [usage Sass formatter](https://github.com/Yuriy-Svetlov/gulp-live-alert-bp/tree/master/examples/1)
+* [usage Sass and Stylelint formatters](https://github.com/Yuriy-Svetlov/gulp-live-alert-bp/tree/master/examples/2)
+* [useful examples](https://github.com/Yuriy-Svetlov/live-alert-bp/blob/master/documentation/examples/gulp/README.md) 
 for Gulp 
 
 ##  API
 
-* [https://github.com/semiromid/live-alert-bp](https://github.com/semiromid/live-alert-bp#api)
+* [https://github.com/Yuriy-Svetlov/live-alert-bp](https://github.com/Yuriy-Svetlov/live-alert-bp#api)

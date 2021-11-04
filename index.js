@@ -1,5 +1,5 @@
 /**
- * Copyright (c) Somin Yuri
+ * Copyright (c) Yuriy Svetlov
  * https://github.com/semiromid
  * 
  * This source code is licensed under the MIT license found in the
