@@ -9,6 +9,7 @@
   "author": "Somin Yuri",
   "license": "MIT",
   "devDependencies": {
+    "express": "^4.17.1",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-live-alert-bp": "^1.0.1",

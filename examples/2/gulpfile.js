@@ -9,12 +9,13 @@ const
   plumber = require('gulp-plumber'),
   sass = require('gulp-sass'),
   postcss = require('gulp-postcss'),
-  cssnano = require('cssnano');
+  cssnano = require('cssnano'),
+  webServer = require('./web-server');
 
 const 
-  cssWatch = 'src/scss/*.scss',
+  cssWatch = 'src/scss/**/*.scss',
   cssSrc = ['src/scss/*.scss'],
-  cssDest = 'build/css';
+  cssDest = 'dest/css';
 
 const 
   liveAlert = new liveAlertBP({host: '127.0.0.1', port: '8080'});
@@ -76,6 +77,7 @@ function formatterStylelint(results, returnValue) {
 
 function watch(){
   liveAlert.run();
+  webServer();
 
   gulp.watch(cssWatch, gulp.series(css));
 }
