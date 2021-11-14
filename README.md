@@ -103,3 +103,7 @@ for Gulp
 ##  API
 
 * [https://github.com/Yuriy-Svetlov/live-alert-bp](https://github.com/Yuriy-Svetlov/live-alert-bp#api)
+
+##  Browser plugin API
+
+[API of browser plugin **Live Alert Browser Page**](https://live-alert-browser-page.com/documentation)
